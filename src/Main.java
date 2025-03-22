@@ -3,6 +3,7 @@ import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
+        //Creamos un objeto sistema para agregar y mostrar los otros objetos que creemos más adelante
         Sistema sistema = new Sistema();
 
         // Crear un cliente
