@@ -82,10 +82,10 @@ public class Sistema {
     }
 
     public void mostrarAsignaciones() {
-        if (empleados.isEmpty()) {
-            System.out.println("No hay asiganciones registradas.");
+        if (asignaciones.isEmpty()) {
+            System.out.println("No hay asignaciones registradas.");
         } else {
-            System.out.println("Lista de empleados:");
+            System.out.println("Lista de asignaciones:");
             for (Asignacion asignacion : asignaciones) {
                 System.out.println(asignacion);
             }

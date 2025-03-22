@@ -11,6 +11,8 @@ public class Main {
                 "mario@gmail.com", "Calle 123, Ciudad", "Activo", "Admin", LocalDate.now(), "Activo"
         );
         sistema.agregarCliente(cliente1);
+        //Obtener una propiedad del objeto
+        System.out.println(cliente1.getNombre());
 
         //segundo cliente con menos parametros
         Cliente cliente2 = new Cliente("c2","Carlos Gomez","233566","juridica");
@@ -30,19 +32,15 @@ public class Main {
 
         Cotizacion cotizacion1 = new Cotizacion("1",cliente1,35,fechaInicio,fechaFin,100.00,50.00,"En proceso");
         sistema.agregarCotizacion(cotizacion1);
-        System.out.println(cotizacion1.getTotal());
 
-
-        Cotizacion cotizacion2 = new Cotizacion("2",cliente2,35,fechaInicio,fechaFin,100.00,50.00,"En");
+        Cotizacion cotizacion2 = new Cotizacion("2",cliente2,35,fechaInicio,fechaFin,100.00,50.00,"Finalizada");
         sistema.agregarCotizacion(cotizacion2);
-        //cotizacion2.validarDatos();
 
 
         //Actividad
         LocalDateTime fechaHoraInicio = LocalDateTime.of(2023, 10, 25, 9, 0); // Fecha y hora específica
         LocalDateTime fechaHoraFin = LocalDateTime.parse("2023-10-25T17:00:00");
         Actividad actividad1 = new Actividad("programar en java",empleado1,"computacion",20,fechaHoraInicio,fechaHoraFin,100, 100, 50);
-        System.out.println(actividad1.getTotal());
         sistema.agregarActividad(actividad1);
 
         //Asignacion
